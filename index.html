@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <fieldset class="container">
+        <legend class="titulo">Projeto Traveller - Cadastro de Hotéis</legend>
+
+        <fieldset class="grupo">
+          <div class="campo">
+            <label for="nome"><strong>Nome do Hotel</strong></label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Ex: Hotel Brasil"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+          <legend class="subtitulo">Localização:</legend>
+
+          <div class="campo">
+            <label for="rua"><strong>Rua</strong></label>
+            <input
+              type="text"
+              name="rua"
+              id="rua"
+              placeholder="Ex: Rua das Margaridas"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="numero"><strong>Número</strong></label>
+            <input
+              type="text"
+              name="numero"
+              id="numero"
+              placeholder="Ex: 190"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="bairro"><strong>Bairro</strong></label>
+            <input
+              type="text"
+              name="bairro"
+              id="bairro"
+              placeholder="Ex: Cerqueira César"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+          <div class="campo">
+            <label for="cep"><strong>CEP</strong></label>
+            <input
+              type="text"
+              name="cep"
+              id="cep"
+              placeholder="Ex: 37472-000"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="cidade"><strong>Cidade</strong></label>
+            <input
+              type="text"
+              name="cidade"
+              id="cidade"
+              placeholder="Ex: Belo Horizonte"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="estado"><strong>Estado</strong></label>
+            <input
+              list="uf"
+              id="estado"
+              class="lista"
+              required
+              placeholder="Ex: Selecione o estado"
+            />
+            <datalist id="uf">
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+              <option value="EX">Estrangeiro</option>
+            </datalist>
+          </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+          <legend class="subtitulo">Contato:</legend>
+
+          <div class="campo">
+            <label for="tel"><strong>Telefone</strong></label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Ex: 9 9999-9999"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="classificacao"><strong>Classificação</strong></label>
+            <input
+              list="classifica"
+              name="classificacao"
+              id="classificacao"
+              class="lista"
+              placeholder="ex: Selecione a Classificação"
+              required
+            />
+            <datalist id="classifica">
+              <option value="1 estrela"></option>
+              <option value="2 estrelas"></option>
+              <option value="3 estrelas"></option>
+              <option value="4 estrelas"></option>
+              <option value="5 estrelas"></option>
+            </datalist>
+          </div>
+
+          <div class="campo">
+            <label for="cadastro"><strong>Data do cadastro</strong></label>
+            <input
+              type="date"
+              name="cadastro"
+              id="cadastro"
+              placeholder="Ex: Cerqueira César"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+          <legend class="subtitulo">Outras informações:</legend>
+
+          <div class="campo">
+            <label for="diaria"><strong>Valor diária</strong></label>
+            <input
+              type="number"
+              name="diaria"
+              id="diaria"
+              placeholder="Ex: 140"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="classificacao"><strong>Email</strong></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Ex: seuhotel@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="site"><strong>Site</strong></label>
+            <input
+              type="url"
+              name="site"
+              id="site"
+              placeholder="Ex: www.seuhotel.com"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <div class="campo">
+          <br />
+          <label for="experiencia"
+            ><strong>Adicionar mais informações:</strong></label
+          >
+          <textarea
+            id="experiencia"
+            name="experiencia"
+            placeholder="Informações adicionais"
+          ></textarea>
+        </div>
+
+        <div class="campo-botao">
+          <button class="botao" type="submit">Adicionar Hotel</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

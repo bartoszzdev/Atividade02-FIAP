@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root {
+    --bg-color: #F0F8FF;
+    --first-color: #0D0CFA;
+    --second-color: #224EE0;
+}
+
+body {
+    padding: 2rem;
+    background-color: var(--bg-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #59429d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    width: 85%;
+    margin: 0 auto
+}
+
+input, select, textarea, button {
+    font-size: 1rem;
+    color: #59429d;
+    border-radius: 5px;
+}
+
+textarea { 
+    resize:none;
+    height: 130px
+}
+
+fieldset {
+    border: 0;
+    width: 100%
+}
+
+.container {
+    border: 2px solid #ccc;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+.titulo {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--first-color);
+    padding: 0.5rem;
+} 
+
+.subtitulo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.grupo {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.campo {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    margin-bottom: 0.2rem;
+    color: var(--second-color);
+    display: block;
+}
+
+.campo input, .campo select, .campo textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--second-color);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1rem;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+.campo-botao {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botao {
+    font-size: 1.2rem;
+    background: var(--second-color);
+    border: 0;
+    color: #ffffff;
+    padding: 0.2rem 0.6rem;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.botao:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao, select{
+    cursor: pointer;
+}
